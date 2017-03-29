@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements MainContract.IMai
 
     @Override
     public void performPropsClick(View view, int postion) {
-        //TODO 执行属性点击相关,更新UI
+        // 执行属性点击相关,更新UI
         commodityPropsAdapter.notifyDataSetChanged();
     }
 

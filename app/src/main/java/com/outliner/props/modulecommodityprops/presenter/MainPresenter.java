@@ -51,14 +51,15 @@ public class MainPresenter implements MainContract.IPresent {
         group01.getAttributeMembers().add(1, new ProductModel.AttributesEntity.AttributeMembersEntity(1, 2, "白色"));
         group01.getAttributeMembers().add(2, new ProductModel.AttributesEntity.AttributeMembersEntity(1, 3, "绿色测试长度"));
         testData.getAttributes().add(0, group01);//第一组
-//        ProductModel.AttributesEntity group02 = new ProductModel.AttributesEntity();
-//        group02.setName("尺寸");
-//        group02.setId(2);
-//        group02.getAttributeMembers().add(0, new ProductModel.AttributesEntity.AttributeMembersEntity(2, 4, "80cm"));
-//        group02.getAttributeMembers().add(1, new ProductModel.AttributesEntity.AttributeMembersEntity(2, 5, "90cm"));
-//        group02.getAttributeMembers().add(2, new ProductModel.AttributesEntity.AttributeMembersEntity(2, 6, "100cm"));
-//        group02.getAttributeMembers().add(3, new ProductModel.AttributesEntity.AttributeMembersEntity(2, 7, "110cm"));
-//        testData.getAttributes().add(1, group02);//第二组
+        ProductModel.AttributesEntity group02 = new ProductModel.AttributesEntity();
+        group02.setName("尺寸");
+        group02.setId(2);
+        group02.getAttributeMembers().add(0, new ProductModel.AttributesEntity.AttributeMembersEntity(2, 4, "80cm"));
+        group02.getAttributeMembers().add(1, new ProductModel.AttributesEntity.AttributeMembersEntity(2, 5, "90cm"));
+        group02.getAttributeMembers().add(2, new ProductModel.AttributesEntity.AttributeMembersEntity(2, 6, "100cm"));
+        group02.getAttributeMembers().add(3, new ProductModel.AttributesEntity.AttributeMembersEntity(2, 7, "110cm"));
+        testData.getAttributes().add(1, group02);//第二组
+        //一下测试数据打开。因为选中的不能做取消选择。会复现一旦完属性，会导致无法再选其他的
 //        ProductModel.AttributesEntity group03 = new ProductModel.AttributesEntity();
 //        group03.setName("规格");
 //        group03.getAttributeMembers().add(0, new ProductModel.AttributesEntity.AttributeMembersEntity(3, 8, "东"));
