@@ -1,2 +1,1 @@
-# Sku
-Sku算法，Android实现，淘宝Sku实现
+﻿# Android实现，淘宝Sku商品属性选择算法。 mvp模式。属性可变长度。
