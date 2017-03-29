@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="1.0px"
+    android:insetRight="1.0px">
+
+    <selector>
+        <item android:state_enabled="false">
+            <shape>
+                <solid android:color="#f5f5f5"></solid>
+                <corners
+                    android:bottomLeftRadius="10.0dip"
+                    android:bottomRightRadius="10.0dip"
+                    android:radius="2.0dip"
+                    android:topLeftRadius="11.0dip"
+                    android:topRightRadius="11.0dip" />
+
+                <stroke
+                    android:width="1dp"
+                    android:color="#ff0000" />
+            </shape>
+        </item>
+        <item android:state_checked="true">
+            <shape
+                >
+                <solid android:color="#a2e542"></solid>
+                <corners
+                    android:bottomLeftRadius="10.0dip"
+                    android:bottomRightRadius="10.0dip"
+                    android:radius="2.0dip"
+                    android:topLeftRadius="10.0dip"
+                    android:topRightRadius="10.0dip" />
+
+                <stroke
+                    android:width="1dp"
+                    android:color="#a2e542" />
+            </shape>
+        </item>
+        <item>
+            <shape>
+
+                <solid android:color="#eededede"></solid>
+                <corners
+                    android:bottomLeftRadius="10.0dip"
+                    android:bottomRightRadius="10.0dip"
+                    android:radius="2.0dip"
+                    android:topLeftRadius="11.0dip"
+                    android:topRightRadius="11.0dip" />
+
+                <stroke
+                    android:width="1dp"
+                    android:color="#eededede" />
+            </shape>
+        </item>
+
+    </selector>
+
+</inset>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff">
+    <TextView
+        android:id="@+id/tv_type_one"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content"
+        android:text="颜色"
+        android:textColor="#505050" />
+    <com.outliner.props.commoncustomview.TagFlowLayout
+        android:id="@+id/gv_iv_txt"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        zhy:max_select="1"></com.outliner.props.commoncustomview.TagFlowLayout>
+    <View
+        android:id="@+id/view_fengexian"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/gv_iv_txt"
+        android:background="#e0e0e0" />
+</RelativeLayout>

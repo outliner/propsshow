@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.outliner.props.MainActivity">
+
+    <Button
+        android:id="@+id/btn_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:onClick="bottomClick"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="显 示 规 格" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/v_bottom_sheet_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2e000000"></View>
+
+        <include
+            layout="@layout/bottom_sheet_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"></include>
+
+    </RelativeLayout>
+</RelativeLayout>
